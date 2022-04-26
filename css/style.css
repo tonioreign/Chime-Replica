@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -29,6 +28,8 @@ body {
     align-items: center;
     padding: 7px;
     width: 100%;
+    max-height: 10vh;
+    position: fixed;
     background-color: #fafafa;
 }
 
@@ -94,7 +95,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 75vh;
+    min-height: 83vh;
     font-size: 12px;
     width: 100%;
 }
@@ -137,9 +138,10 @@ button:hover {
 
 .sponsors {
     display: block;
-    background-color: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    background-color: rgb(250, 250, 250);
     width: 100%;
-    height: 15vh;
+    padding-bottom: 50px;
+    height: auto;
 }
 
 .sponsors .links {
@@ -153,4 +155,69 @@ button:hover {
 .sponsors img {
     width: auto;
     height: 36px;
+}
+
+.content-container {
+    background-image: url(../img/chime-1.png);
+    background-repeat: no-repeat;
+    background-size: 30vmax;
+    background-position:50vw;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 215px;
+}
+
+.content-container h2 {
+    font-size: 36px;
+}
+
+.content-container p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container-a {
+    color: #7bdcb5;
+    font-weight: 600;
+}
+
+.container-a:hover {
+    color: #01bf79;
+    transition: .17s ease-in-out;
+}
+
+.container-set {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40vh;
+    padding-right: 200px;
+    background-color: rgb(250, 250, 250);
+}
+
+.img-container {
+    background-image: url(../img/chime-2.png);
+    background-position: 20vw;
+    background-repeat: no-repeat;
+    background-size: 28vmax;
+    min-height: 40vh;
+    min-width: 55vw;
+}
+
+.content-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-containers h2 {
+    font-size: 36px;
+}
+
+.content-containers p {
+    font-weight: 500;
 }
