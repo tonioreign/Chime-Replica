@@ -1,28 +1,42 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     font-weight: 600;
     color: rgb(60, 59, 59);
+    width: 100%;
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    padding: 7px;
     width: 100%;
+    background-color: #fafafa;
 }
 
 .logo {
     max-width: 100%;
     width: 100px;
     height: auto;
+    cursor: pointer;
 }
 
 .left-container, .right-container{
@@ -55,7 +69,7 @@
     transition: all .17s ease-in-out;
     cursor: pointer;
 }
-.get-started-btn {
+button {
     border: none;
     background: #00d084;
     padding: 15px 50px;
@@ -69,3 +83,41 @@ button:hover {
     cursor: pointer;
 }
 
+.content-header {
+    background-image: url(../img/CcS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 200px
+}
+
+.content-header h1 {
+    font-size: 48px;
+}
+
+.content-header input {
+    padding: 15px 100px 10px 20px;
+    border-radius: 50px;
+    text-align: left;
+    font-weight: 550;
+}
+
+.content-header input::placeholder {
+    color: #e6e1e1;
+    font-size: 18px;
+    text-align: left;
+}
+
+.apply-container {
+    display: flex;
+    gap: 20px;
+}
